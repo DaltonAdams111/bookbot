@@ -37,8 +37,7 @@ def get_book_report(sorted_characters, book_words):
         character = sorted_characters[i]["letter"]
         count = sorted_characters[i]["num"]
         report += (f"\nThe '{character}' character was found {count} times")
-        if i == len(sorted_characters) - 1:
-            report += "\n--- End report ---"
+    report += "\n--- End report ---"
     return report
 
 main()
